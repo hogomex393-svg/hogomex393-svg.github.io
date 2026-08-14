@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="周宇曦的个人作品集，聚焦高效人工智能、轻量化视觉模型与数字产品。" />
+    <meta name="theme-color" content="#e8e8e5" />
+    <title>周宇曦 | AI Research Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-site="graduate">
+    <div class="loader" data-loader aria-hidden="true"><span>YUXI ZHOU</span><i></i><b>00</b></div>
+    <div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+
+    <header class="header" data-header>
+      <a class="identity" href="#top" aria-label="返回首页">YZ</a>
+      <nav aria-label="主导航">
+        <a href="#work" data-i18n="navWork">项目</a>
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#internship" data-i18n="navInternship">实习</a>
+        <a href="#contact" data-i18n="navContact">联系</a>
+      </nav>
+      <button class="language" type="button" data-language aria-label="切换语言">EN</button>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="hero-art" data-parallax aria-hidden="true">
+          <div class="paper-relief relief-back"><img src="/assets/paper-page-4.png" alt="" /></div>
+          <div class="paper-relief relief-front"><img src="/assets/paper-page-1.png" alt="" /></div>
+          <span class="orbit-line one"></span><span class="orbit-line two"></span>
+        </div>
+        <a class="hero-about hover-line" href="#about" data-i18n="heroAbout">关于</a>
+        <a class="hero-work hover-line" href="#work"><span data-i18n="heroWork">查看全部项目</span><b>↘</b></a>
+        <span class="hero-scroll" data-i18n="scroll">向下滚动</span>
+        <div class="hero-lockup">
+          <div>
+            <p class="hero-name">YUXI ZHOU <small>周宇曦</small></p>
+            <p class="hero-role" data-i18n="heroRole">计算机科学本科生 · 人工智能研究</p>
+          </div>
+          <div>
+            <h1 data-i18n="heroTitle">让智能系统在真实世界中<br />轻盈而准确地工作</h1>
+          </div>
+        </div>
+        <div class="hero-foot"><span>COMPUTER SCIENCE · BJTU</span><span>AI RESEARCH · LIGHTWEIGHT VISION</span></div>
+      </section>
+
+      <section class="manifesto" id="about">
+        <p class="section-label reveal" data-i18n="profileLabel">简介</p>
+        <h2 class="reveal text-reveal" data-i18n="manifestoTitle">从实验出发，<br />向现实抵达。<br /><em>让复杂技术可用。</em></h2>
+        <div class="manifesto-copy reveal">
+          <p data-i18n="manifestoCopy">我是一名北京交通大学计算机科学与技术本科生。研究轻量化视觉模型，也构建产品、游戏与数据驱动的决策系统。我关心模型的精度，也关心它离开实验室之后是否依然有效。</p>
+          <div class="manifesto-meta"><span>IELTS 6.5</span><span>IEEE FIRST AUTHOR</span><span>2023—2027</span></div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="work-intro">
+          <p class="section-label reveal">SELECTED WORK · 01—04</p>
+          <h2 class="reveal" data-i18n="workTitle">研究、产品<br />与交互世界</h2>
+          <p class="work-description reveal" data-i18n="workIntro">每个项目都从一个具体问题开始：如何让模型更快，如何让健康记录更自然，如何让一个虚拟空间值得探索。</p>
+        </div>
+
+        <article class="project project-paper" id="research" data-project>
+          <a class="paper-visual-link" href="https://ieeexplore.ieee.org/document/11382277" target="_blank" rel="noreferrer" aria-label="在 IEEE Xplore 查看论文">
+            <div class="project-media paper-media image-reveal">
+              <img class="paper-page paper-one" src="/assets/paper-page-1.png" alt="无人机灾害监测论文首页" />
+              <img class="paper-page paper-two" src="/assets/paper-page-4.png" alt="轻量化模型对比结果页" />
+              <div class="paper-shadow" aria-hidden="true"></div>
+            </div>
+          </a>
+          <div class="project-caption paper-caption reveal">
+            <span class="project-number">01</span>
+            <div><p data-i18n="paperRole">第一作者 · 大创第一负责人 · 模型评估与压缩</p><h3 data-i18n="paperTitle">无人机实时灾害监测</h3></div>
+            <p class="project-summary" data-i18n="paperSummary">在统一实验框架下比较九种轻量化架构，寻找准确率、参数规模与推理延迟之间的平衡。</p>
+            <span class="project-link">AI · EDGE DEPLOYMENT</span>
+          </div>
+
+          <div class="paper-evidence">
+            <div class="paper-stats" aria-label="论文实验数据">
+              <div class="paper-stat reveal"><strong>97.75%</strong><span data-i18n="statAccuracy">优化后 TinyViT 准确率</span></div>
+              <div class="paper-stat reveal"><strong>3.12ms</strong><span data-i18n="statLatency">最低推理延迟</span></div>
+              <div class="paper-stat reveal"><strong>0.35M</strong><span data-i18n="statParams">剪枝后参数量</span></div>
+              <div class="paper-stat reveal"><strong>9</strong><span data-i18n="statModels">种架构统一比较</span></div>
+            </div>
+            <div class="paper-research-copy reveal">
+              <p class="section-label">RESEARCH NOTES</p>
+              <p data-i18n="researchCopy">面向无人机应急监测的边缘部署约束，我比较 CNN、Transformer 与混合架构，并结合通道剪枝、知识蒸馏和模型冻结，建立部署导向的选择依据。</p>
+              <div class="paper-actions">
+                <a href="https://ieeexplore.ieee.org/document/11382277" target="_blank" rel="noreferrer">IEEE XPLORE ↗</a>
+                <a href="/assets/yuxi-zhou-uav-paper.pdf" download data-i18n="paperPdf">下载论文 PDF ↓</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-game" id="game" data-project>
+          <a class="project-visual-link" href="https://hogomex393-svg.github.io/Fragments-of-Aether/" target="_blank" rel="noreferrer">
+            <div class="project-media video-media image-reveal">
+              <img src="/media/aether-trials.png" loading="lazy" decoding="async" alt="Fragments of Aether 三个神殿试炼选择画面" />
+            </div>
+          </a>
+          <div class="project-caption reveal">
+            <span class="project-number">02</span>
+            <div><p>LEVEL DESIGN · DEVELOPMENT</p><h3>Fragments of Aether</h3></div>
+            <p class="project-summary" data-i18n="gameSummary">独立设计 Hollow Crypt 关卡，用三段递进式谜题、状态逻辑和环境反馈组织玩家体验。</p>
+            <div class="project-actions"><a href="https://hogomex393-svg.github.io/Fragments-of-Aether/" target="_blank" rel="noreferrer" data-i18n="liveSite">在线展示 ↗</a><a href="https://github.com/hogomex393-svg/Fragments-of-Aether" target="_blank" rel="noreferrer">GITHUB ↗</a></div>
+          </div>
+        </article>
+
+        <article class="project project-lunara" id="lunara" data-project>
+          <a class="project-visual-link" href="https://github.com/hogomex393-svg/Lunara" target="_blank" rel="noreferrer">
+            <div class="project-media lunara-media image-reveal">
+              <img src="/media/lunara-cover.jpg" loading="lazy" decoding="async" alt="Lunara 女性健康追踪项目封面" />
+              <div class="lunar-glow" aria-hidden="true"></div>
+            </div>
+          </a>
+          <div class="project-caption reveal">
+            <span class="project-number">03</span>
+            <div><p>HCI · REACT · PWA</p><h3>Lunara</h3></div>
+            <p class="project-summary" data-i18n="lunaraSummary">从周期、情绪与症状记录出发，构建可安装的女性健康 PWA，并加入上下文相关的 AI 支持。</p>
+            <div class="project-actions"><a href="https://github.com/hogomex393-svg/Lunara" target="_blank" rel="noreferrer">GITHUB ↗</a></div>
+          </div>
+        </article>
+
+        <article class="project project-modeling" id="modeling" data-project>
+          <a class="certificate-visual-link" href="/assets/mcm-honorable-mention.pdf" target="_blank">
+            <div class="certificate-stage image-reveal">
+              <span class="certificate-word" aria-hidden="true">MODEL</span>
+              <img class="certificate-sheet certificate-back" src="/assets/mcm-honorable-mention.png" loading="lazy" decoding="async" alt="2024 MCM Honorable Mention 证书" />
+              <img class="certificate-sheet certificate-front" src="/assets/mcm-honorable-mention.png" loading="lazy" decoding="async" alt="" />
+              <div class="modeling-data"><span>SA / ARIMA / AHP</span><strong>TOP 20%</strong><span>MCM / CUMCM</span></div>
+            </div>
+          </a>
+          <div class="project-caption reveal">
+            <span class="project-number">04</span>
+            <div><p data-i18n="modelingRole">队长 · 建模与论文写作</p><h3 data-i18n="modelingTitle">复杂系统的决策模型</h3></div>
+            <p class="project-summary" data-i18n="modelingSummary">以模拟退火、随机森林、ARIMA 与多属性决策方法，解决生产优化和全球治理问题。</p>
+            <div class="project-actions"><a href="/assets/mcm-honorable-mention.pdf" download data-i18n="certificatePdf">下载美赛证书 PDF ↓</a></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="internship" id="internship">
+        <div class="internship-head">
+          <p class="section-label reveal" data-i18n="internshipLabel">实习经历 · 2026.07—09</p>
+          <div class="internship-title reveal">
+            <h2 data-i18n="internshipTitle">在真实业务里，<br /><em>把数据做成工具。</em></h2>
+            <div class="internship-company">
+              <p data-i18n="internshipCompany">用友网络科技股份有限公司</p>
+              <span data-i18n="internshipRole">实施与交付部 · 数据开发 / Java 开发实习生</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="internship-stats" aria-label="实习量化成果">
+          <div class="internship-stat reveal"><strong>8.7M</strong><span data-i18n="internshipStatData">财政事实数据记录</span></div>
+          <div class="internship-stat reveal"><strong>47.85M</strong><span data-i18n="internshipStatGraph">知识图谱维度关系</span></div>
+          <div class="internship-stat reveal"><strong>31/31</strong><span data-i18n="internshipStatImport">核心表准确导入</span></div>
+        </div>
+
+        <div class="internship-projects">
+          <article class="internship-project reveal">
+            <div class="internship-project-index"><span>PROJECT</span><strong>01</strong></div>
+            <div class="internship-project-body">
+              <p class="internship-stack" data-i18n="internshipRole1">参与模块开发 · 企业交付 / PRIVATE · PYTHON · FASTAPI · POSTGRESQL · NEO4J · RAGFLOW</p>
+              <h3 data-i18n="internshipProject1Title">财政数据知识库与多维查询平台</h3>
+              <p data-i18n="internshipProject1Copy">面向预算、决算、执行与调整数据设计多维标签体系，参与复合事项拆分、多维筛选及报表库接口开发；完成 17 套历史行政区划编码的标准化映射。</p>
+              <p class="internship-result" data-i18n="internshipProject1Result">补全 180,875 条可唯一验证的实体关系，使未关联数据量降低 14.3%。</p>
+            </div>
+          </article>
+
+          <article class="internship-project reveal">
+            <div class="internship-project-index"><span>PROJECT</span><strong>02</strong></div>
+            <div class="internship-project-body">
+              <p class="internship-stack" data-i18n="internshipRole2">参与模块开发 · 企业交付 / PRIVATE · JDK 8 · SWING · MAVEN · APACHE POI · JDBC</p>
+              <h3 data-i18n="internshipProject2Title">自动导入数据 Java 版与工具开发</h3>
+              <p data-i18n="internshipProject2Copy">将可配置 Excel 导入工具由 Python 迁移并增强为 Java 版，实现多 Sheet 解析、字段映射、虚拟列、批量导入，以及事务切换与失败回滚。</p>
+              <p class="internship-result" data-i18n="internshipProject2Result">支持 Oracle、达梦、MySQL 等 6 类数据库；以约 40 张真实部门决算报表验证，并交付 Fat JAR 与 Windows EXE。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="journey" id="overview">
+        <div class="journey-intro reveal"><p class="section-label" data-i18n="journeyLabel">经历概览</p><h2 data-i18n="journeyTitle">先看路径，<br /><em>再进入项目。</em></h2></div>
+        <div class="journey-list">
+          <article class="reveal"><a class="journey-link" href="#internship"><time>2026.07—09</time><h3 data-i18n="journeyInternshipTitle">用友网络 · 实施与交付部</h3><p data-i18n="journeyInternshipCopy">数据开发 / Java 开发实习</p></a></article>
+          <article class="reveal"><a class="journey-link" href="#game"><time>2026</time><h3>Lunara / Fragments of Aether</h3><p data-i18n="journey1">产品开发与游戏关卡设计</p></a></article>
+          <article class="reveal"><a class="journey-link" href="#research"><time>2025—26</time><h3 data-i18n="journey3Title">北京市级大创 → ICAICE · IEEE</h3><p data-i18n="journey3">第一负责人 / 第一作者 · 轻量化视觉研究</p></a></article>
+          <article class="reveal"><a class="journey-link" href="#modeling"><time>2024</time><h3>CUMCM / MCM-ICM</h3><p data-i18n="journey4">省二等奖与 Honorable Mention · TOP 20%</p></a></article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="section-label reveal" data-i18n="contactLabel">联系</p>
+        <h2 class="reveal" data-i18n="contactTitle">下一次合作，<br /><em>从一次交谈开始。</em></h2>
+        <div class="contact-channels reveal">
+          <a class="contact-channel" href="mailto:23722120@bjtu.edu.cn">23722120@bjtu.edu.cn ↗</a>
+          <a class="contact-channel" href="tel:+8618837340731">18837340731 ↗</a>
+        </div>
+        <div class="contact-bottom"><p>YUXI ZHOU · CHINA</p><div><a href="https://github.com/hogomex393-svg" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="/assets/yuxi-zhou-resume.pdf" target="_blank" data-resume-link data-i18n="resumePdf">中文简历 PDF ↗</a></div></div>
+      </section>
+    </main>
+
+    <footer><span>© <b data-year></b> YUXI ZHOU</span><a href="#top">BACK TO TOP ↑</a></footer>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
