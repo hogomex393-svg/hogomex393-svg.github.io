@@ -66,6 +66,9 @@ body, a, button { cursor: none; }
 .manifesto-copy { grid-column: 2; width: min(640px, 60%); margin-left: auto; }
 .manifesto-copy > p { font-size: 18px; line-height: 1.95; color: #aaa9a2; }
 .manifesto-meta { display: flex; justify-content: space-between; margin-top: 35px; padding-top: 16px; border-top: 1px solid rgba(232,232,229,.22); font-size: 10px; letter-spacing: .1em; }
+.manifesto-meta--language { display: grid; grid-template-columns: auto minmax(260px, 1fr) auto; align-items: start; gap: clamp(18px, 3vw, 42px); font-size: 11px; line-height: 1.6; letter-spacing: .075em; }
+.manifesto-meta--language span:nth-child(2) { color: #aaa9a2; }
+body[data-site="graduate"] .manifesto-copy { width: min(820px, 78%); }
 
 .work { background: var(--paper); padding: 15vh 3vw 18vh; }
 .work-intro { min-height: 75svh; padding: 5vh 3vw 12vh; display: grid; grid-template-columns: 1fr 2.6fr 1.2fr; gap: 5vw; align-items: center; }
@@ -235,6 +238,8 @@ footer b { font-weight: 400; }
   .manifesto > h2 { font-size: 40px; margin: 60px 0; }
   .manifesto-copy { width: 100%; margin: 0; }
   .manifesto-copy > p { font-size: 16px; line-height: 1.9; }
+  body[data-site="graduate"] .manifesto-copy { width: 100%; }
+  .manifesto-meta, .manifesto-meta--language { display: grid; grid-template-columns: 1fr; gap: 10px; line-height: 1.55; }
   .work { padding: 100px 16px; }
   .work-intro { min-height: auto; padding: 0 8px 100px; grid-template-columns: 1fr; gap: 45px; }
   .work-intro h2 { font-size: 64px; }
